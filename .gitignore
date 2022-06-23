@@ -1,0 +1,11 @@
+
+# Vim
+*.swo
+*.swp
+
+# VS Code
+.vscode/
+
+# Build Artifacts
+Cargo.lock
+target/
