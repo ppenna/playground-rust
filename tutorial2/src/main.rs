@@ -66,7 +66,7 @@
         fn main()
 */
 fn main() {
-    println!("Hello, CIS198!");
+    println!("Hello, folks!");
 
     // This is a comment
     /* This is also a comment */
