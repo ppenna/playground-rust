@@ -1,0 +1,13 @@
+# Copyright(C) 2023 Pedro Henrique Penna <pedrohenriquepenna@gmail.com>
+# Licensed under the MIT license.
+
+# VS Code
+.vscode/
+
+# Vim
+*.swo
+*.swp
+
+# Build Artifacts
+Cargo.lock
+target/
