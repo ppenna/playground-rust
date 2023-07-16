@@ -8,4 +8,5 @@ members = [
     "03-primitive-types",
     "04-tuples",
     "05-arrays",
+    "06-flow-control",
 ]
