@@ -6,4 +6,5 @@ members = [
     "01-hello-world",
     "02-variables",
     "03-primitive-types",
+    "04-tuples",
 ]
