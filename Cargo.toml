@@ -9,4 +9,5 @@ members = [
     "04-tuples",
     "05-arrays",
     "06-flow-control",
+    "07-functions",
 ]
