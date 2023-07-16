@@ -1,8 +1,7 @@
 # Copyright(C) 2023 Pedro Henrique Penna <pedrohenriquepenna@gmail.com>
 # Licensed under the MIT license.
 
-[workspace]
-members = [
-    "01-hello-world",
-    "02-variables",
-]
+[package]
+name = "variables"
+version = "0.1.0"
+edition = "2021"
