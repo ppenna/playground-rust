@@ -11,4 +11,5 @@ members = [
     "06-flow-control",
     "07-functions",
     "08-ownership",
+    "09-structures",
 ]
