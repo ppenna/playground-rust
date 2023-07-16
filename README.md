@@ -8,79 +8,17 @@ If you like this project, please consider giving it a star ⭐
 
 Happy learning! 😃
 
-## Table of Contents
+## Contents
 
-- [Table of Contents](#table-of-contents)
-- [What is Rust and why should I learn it?](#what-is-rust-and-why-should-i-learn-it)
-- [What is Cargo and how to use it?](#what-is-cargo-and-how-to-use-it)
-
-
-## What is Rust and why should I learn it?
-
-Rust is a systems programming language designed for performance, safety, and concurrency.
-
-It was created from the ground up with a focus on preventing common errors errors like null pointer dereferencing, data races, and buffer overflows to happen.
-
-### What are the use-cases for Rust?
-
-- Operating Systems
-- Device Drivers
-- Web Servers
-- Scientific Computing
-- Gaming
-
-### What are the highlights of Rust?
-
-- Safe memory management without garbage collection
-
-- Strong support for concurrency and parallelism
-
-- High performance
-
-- Expressiveness and powerful abstractions
-
-- Built-in cross platform support
-
-- Growing community and ecosystem
-
-## What is Cargo and how to use it?
-
-Cargo is the package manager and build system for Rust. It is an integral part of the Rust programming language ecosystem.
-
-### Create a Project
-
-```Bash
-cargo new --bin <project name> # Create a new binary project.
-cargo new --lib <project name> # Create a new library project.
-```
-
-
-> Manage it with git!
-
-### Building
-
-```Bash
-cargo build            # Build in debug mode.
-cargo build --release  # Build in release mode.
-```
-
-### Running
-
-```Bash
-cargo run            # Build and run in debug mode.
-cargo run --release  # Build and run in release mode.
-```
-
-### Testing
-
-```Bash
-cargo test            # Run tests in debug mode.
-cargo test --release  # Run tests in release mode.
-```
-
-### Formatting and Linting
-
-```Bash
-cargo fmt     # Format the code.
-cargo clippy  # Lint the code.
-```
+1. [Hello World](01-hello-world/README.md) - Introduction to Rust and Cargo.
+2. [Variables](02-variables/README.md) - Learn about variables and mutability.
+3. [Types](03-primitive-types/README.md) - Learn about primitive types and operators.
+4. [Tuples](04-tuples/README.md) - Learn how to construct a heterogeneous collection of values with tuples.
+5. [Arrays](05-arrays/README.md) - Learn how to construct a homogeneous collection of values with arrays.
+6. [Flow Control](06-flow-control/README.md) - Learn how to control the flow of your application.
+7. [Functions](07-functions/README.md) - Learn how to decouple your logic using functions.
+8. [Ownership](08-ownership/README.md) - Learn about memory safety provided by ownership and borrowing.
+9. [Structures](09-structs/README.md) - Learn how to create custom data types with structures.
+10. [Enumerations](10-enums/README.md) - Learn how to create custom data types with enumerations.
+11. [Generics](11-generics/README.md) - Learn how to create generic code.
+12. [Traits](12-traits/README.md) - Learn how to create abstract code.
