@@ -1,0 +1,7 @@
+# Copyright(C) 2023 Pedro Henrique Penna <pedrohenriquepenna@gmail.com>
+# Licensed under the MIT license.
+
+[package]
+name = "traits"
+version = "0.1.0"
+edition = "2021"
