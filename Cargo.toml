@@ -10,4 +10,5 @@ members = [
     "05-arrays",
     "06-flow-control",
     "07-functions",
+    "08-ownership",
 ]
