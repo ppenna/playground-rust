@@ -6,6 +6,7 @@
 ///  - References
 ///  - Ownership
 ///  - Borrowing
+///  - Lifetimes
 ///
 fn main() {
     immutable_reference();
@@ -13,16 +14,17 @@ fn main() {
     ownerwship();
     immutable_borrow();
     mutable_borrow();
+    lifetime();
 
-    // TODO: Activity 2
+    // TODO: Activity 4
     // - Write a function that takes an array of numbers as parameter and
     // locates the largest element in that array.
 
-    // TODO: Activity 3
+    // TODO: Activity 5
     //  - Write a function that takes an array of numbers as a parameter and
     //  reverse the order of those elements in that array.
 
-    // TODO: Activity 4
+    // TODO: Activity 6
     // - Write a function that sorts an array of numbers as parameter and sorts
     // that array in-place, using any method that you want.
 }
@@ -133,4 +135,40 @@ fn mutable_borrow() {
 /// Increments a number.
 fn increment(number: &mut usize) {
     *number += 1;
+}
+
+//==============================================================================
+// Lifetimes
+//==============================================================================
+
+///
+/// **Lifetimes **
+///
+/// - Annotations that detail how long a reference is valid.
+/// - Prevents dangling references
+/// - Implicitly introduced by the compiler.
+/// - Are coerced by the compiler.
+///
+fn lifetime() {
+    let string1: &str = "Operating";
+    let string2: &str = "Systems";
+
+    // Implicit lifetime annotation.
+    let longest_string: &str = longest(string1, string2);
+
+    println!("Longest string: {}", longest_string);
+
+    // TODO: Activity 1
+    // - Remove lifetime annotations from the function and observe the error.
+    // - Explain why can't x be used?
+}
+
+/// Returns the longest string between two strings.
+fn longest<'a>(string1: &'a str, string2: &'a str) -> &'a str {
+    // Note that all references have the same lifetime 'a.
+    if string1.len() > string2.len() {
+        string1
+    } else {
+        string2
+    }
 }

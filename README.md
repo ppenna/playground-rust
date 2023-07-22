@@ -17,7 +17,7 @@ Happy learning! 😃
 5. [Arrays](05-arrays/README.md) - Learn how to construct a homogeneous collection of values with arrays.
 6. [Flow Control](06-flow-control/README.md) - Learn how to control the flow of your application.
 7. [Functions](07-functions/README.md) - Learn how to decouple your logic using functions.
-8. [Ownership](08-ownership/README.md) - Learn about memory safety provided by ownership and borrowing.
+8. [Ownership](08-ownership/README.md) - Learn about memory safety provided by ownership, borrowing and lifetimes.
 9. [Structures](09-structs/README.md) - Learn how to create custom data types with structures.
 10. [Enumerations](10-enums/README.md) - Learn how to create custom data types with enumerations.
 11. [Generics](11-generics/README.md) - Learn how to create generic code.
