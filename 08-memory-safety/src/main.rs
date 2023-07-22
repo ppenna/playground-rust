@@ -7,6 +7,7 @@
 ///  - Ownership
 ///  - Borrowing
 ///  - Lifetimes
+///  - Unsafe
 ///
 fn main() {
     immutable_reference();
@@ -15,6 +16,7 @@ fn main() {
     immutable_borrow();
     mutable_borrow();
     lifetime();
+    unsafe_();
 
     // TODO: Activity 4
     // - Write a function that takes an array of numbers as parameter and
@@ -171,4 +173,45 @@ fn longest<'a>(string1: &'a str, string2: &'a str) -> &'a str {
     } else {
         string2
     }
+}
+
+//==============================================================================
+// Unsafe
+//==============================================================================
+
+/// Global variable.
+static mut GLOBAL_VARIABLE: usize = 0;
+
+///
+/// **Unsafe**
+///
+/// - Allows you to bypass the borrow checker.
+/// - Enables you to dereference raw pointers.
+/// - Enables you to call unsafe functions.
+/// - Enables you to access or modify mutable static variables.
+/// - Enables you to implement unsafe traits.
+/// - Enables you to access fields of unions.
+///
+fn unsafe_() {
+    dereference_raw_pointer();
+    unsafe { unsafe_function() };
+}
+
+/// Unsafe function that modifies a global variable.
+unsafe fn unsafe_function() {
+    GLOBAL_VARIABLE += 1;
+    println!("GLOBAL_VARIABLE: {}", GLOBAL_VARIABLE);
+}
+
+/// Dereferences a raw pointer.
+fn dereference_raw_pointer() {
+    let mut x: usize = 1;
+    let r: *mut usize = &mut x;
+
+    // The following code is unsafe because we dereference a raw pointer.
+    unsafe {
+        *r += 1;
+    }
+
+    println!("x: {}", x);
 }
