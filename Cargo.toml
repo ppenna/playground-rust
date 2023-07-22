@@ -10,7 +10,7 @@ members = [
     "05-arrays",
     "06-flow-control",
     "07-functions",
-    "08-ownership",
+    "08-memory-safety",
     "09-structures",
     "10-enumerations",
     "11-generics",
