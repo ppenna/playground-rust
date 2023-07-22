@@ -4,6 +4,8 @@
 ///
 /// This tutorial introduces you to the following concepts in Rust:
 ///  - Functions
+///  - Nested functions
+///  - Closures
 ///
 fn main() {
     let a: isize = -23;
@@ -22,7 +24,11 @@ fn main() {
     fn greater_than(x: isize, y: isize) -> bool {
         x > y
     }
-    print!("{} > {} ? ({})", a, b, greater_than(a, b));
+    println!("{} > {} ? ({})", a, b, greater_than(a, b));
+
+    // This is a closure.
+    let equal = |x: isize, y: isize| -> bool { x == y };
+    println!("{} == {} ? ({})", a, b, equal(a, b));
 
     // TODO: Activity 1
     //  - Write a function that computes the factorial of a number.
