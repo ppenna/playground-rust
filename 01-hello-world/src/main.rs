@@ -29,4 +29,5 @@ fn main() {
     // - Remove the following 'todo' statement.
     // - Add a print statement that prints your name.
     // - Compile and run this example using cargo.
+    todo!("Activity 1");
 }
